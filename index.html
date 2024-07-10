@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://kit.fontawesome.com/89ce5c0afa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Todo app</title>
+</head>
+<body>
+
+  <div class="container">
+     <section>
+      <div class="sub-section1">
+        <h1>TASK LIST</h1>
+        <i class="fa-solid fa-moon"  id="theme-icon" onclick="changeTheme()"></i>
+      </div>
+      <div class="sub-section2">
+        <input type="text" placeholder="Add Task" id="input-text">
+        <button disabled class="todo-button">
+          Add Task
+        </button>
+      </div>
+     </section>
+    
+  </div>
+ 
+  <div class="container1">
+    <ul>
+     
+    </ul> 
+  </div>
+   
+  <label>
+    <h4><span id="itemsLeft"></span> items left</h4>
+    <div>
+        <h4 class="filter all" onclick="filterTasks('all')">All</h4>
+        <h4 class="filter" onclick="filterTasks('active')">Active</h4>
+        <h4 class="filter" onclick="filterTasks('completed')">Completed</h4>
+    </div>
+    <h4 onclick="clearCompleted()">Clear Completed</h4>
+</label>
+
+ 
+
+
+  <script src="app.js"></script>
+</body>
+</html>
